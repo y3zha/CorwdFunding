@@ -1,0 +1,16 @@
+{
+  "name": "crowdfunding",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ y3zha/crowdfunding",
+    "create-local": "graph create --node http://localhost:8020/ y3zha/crowdfunding",
+    "remove-local": "graph remove --node http://localhost:8020/ y3zha/crowdfunding",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 y3zha/crowdfunding"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.30.4",
+    "@graphprotocol/graph-ts": "0.27.0"
+  }
+}
