@@ -1,4 +1,4 @@
-specVersion: 0.0.1
+specVersion: 0.0.4
 schema:
   file: ./schema.graphql
 dataSources:
@@ -8,12 +8,13 @@ dataSources:
     source:
       address: "0xEb7a4D30C6Fb935f5402D22B2b2be9aaCE248BD1"
       abi: CrowdFunding
+      startBlock: 10849097 
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.5
       language: wasm/assemblyscript
       entities:
-        - CampaignLog
+        - CampaignLogEntity
       abis:
         - name: CrowdFunding
           file: ./abis/CrowdFunding.json
